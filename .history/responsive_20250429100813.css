@@ -1,0 +1,347 @@
+/* Estilos responsivos para o site GeoMX */
+
+/* Estilos gerais responsivos */
+@media (max-width: 1200px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .telemetria-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+  
+  /* Tablets e dispositivos médios */
+  @media (max-width: 992px) {
+    /* Ajustes para o menu */
+    .menu {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 30px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      overflow-y: auto;
+    }
+  
+    .menu.active {
+      left: 0;
+    }
+  
+    .menu li {
+      margin: 0 0 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu li a {
+      display: block;
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+  
+    .menu-toggle {
+      display: block;
+      z-index: 1001;
+    }
+  
+    /* Ajustes para seções de conteúdo */
+    .sobre-content,
+    .tab-content.active,
+    .contato-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .sobre-image,
+    .tab-image {
+      order: -1;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .section-header h2 {
+      font-size: 2rem;
+    }
+  
+    /* Ajustes para a seção de serviços de telemetria */
+    .telemetria-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  
+    /* Ajustes para a seção de soluções */
+    .solucoes-tabs {
+      max-width: 100%;
+    }
+  
+    .tab-content.active {
+      flex-direction: column;
+    }
+  
+    /* Ajustes para a seção de clientes */
+    .clientes-logos {
+      gap: 20px;
+    }
+  
+    /* Ajustes para o footer */
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-links {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Dispositivos móveis */
+  @media (max-width: 768px) {
+    header .container {
+      padding: 10px 15px;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  
+    .menu-toggle {
+      font-size: 1.3rem;
+    }
+  
+    .hero {
+      height: auto;
+      min-height: 500px;
+      padding: 100px 0 50px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    section {
+      padding: 50px 0;
+    }
+  
+    /* Ajustes para a seção de serviços */
+    .servicos-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Ajustes para a seção de telemetria */
+    .telemetria-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Ajustes para a seção de soluções */
+    .tabs-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tab-btn {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .tab-btn::after {
+      bottom: 0;
+    }
+  
+    /* Ajustes para a seção de clientes */
+    .clientes-logos {
+      justify-content: center;
+    }
+  
+    .cliente-logo {
+      width: 120px;
+      height: 60px;
+    }
+  
+    /* Ajustes para a seção de depoimentos */
+    .depoimento-autor img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    /* Ajustes para a seção de contato */
+    .contato-form,
+    .contato-info {
+      width: 100%;
+    }
+  
+    /* Ajustes para o footer */
+    .footer-links {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-column {
+      width: 100%;
+    }
+  
+    /* Ajustes para o carrossel */
+    .carrossel-slide img {
+      height: 300px;
+    }
+  
+    .carrossel-caption h3 {
+      font-size: 1.2rem;
+    }
+  
+    .carrossel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Dispositivos móveis pequenos */
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 1.6rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section-header p {
+      font-size: 1rem;
+    }
+  
+    /* Ajustes para a seção de serviços */
+    .servico-card {
+      padding: 20px;
+    }
+  
+    /* Ajustes para a seção de telemetria */
+    .telemetria-card {
+      padding: 20px;
+    }
+  
+    /* Ajustes para a seção de clientes */
+    .cliente-logo {
+      width: 100px;
+      height: 50px;
+    }
+  
+    /* Ajustes para a seção de depoimentos */
+    .depoimento-text {
+      padding: 20px;
+    }
+  
+    /* Ajustes para o carrossel */
+    .carrossel-slide img {
+      height: 200px;
+    }
+  
+    /* Ajustes para o cookie banner */
+    .cookie-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cookie-banner button {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    /* Ajustes para o chatbot */
+    .chatbot-container {
+      width: 280px;
+      bottom: 80px;
+    }
+  
+    .chatbot-toggle {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+  
+    /* Ajustes para o botão de WhatsApp */
+    .whatsapp-button {
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .whatsapp-button i {
+      font-size: 25px;
+    }
+  }
+  
+  /* Ajustes específicos para o menu */
+  @media (max-width: 992px) {
+    .menu {
+      left: -100%;
+      transform: translateX(0);
+      transition: left 0.3s ease;
+    }
+  
+    .menu.active {
+      left: 0;
+    }
+  
+    .menu li {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 20px;
+    }
+  
+    .menu li a {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+  
+    .menu li:last-child a {
+      border-bottom: none;
+    }
+  
+    /* Remover o posicionamento left que estava causando problemas */
+    .menu {
+      position: fixed;
+      left: -100%;
+      top: 80px;
+    }
+  
+    /* Remover o estilo que estava movendo o menu para a direita */
+    .menu {
+      left: -100% !important; /* Sobrescrever qualquer estilo inline */
+    }
+  }
+  
+  /* Correção para o menu quando ativo */
+  @media (max-width: 992px) {
+    .menu.active {
+      left: 0 !important; /* Sobrescrever qualquer estilo inline */
+    }
+  }
+  

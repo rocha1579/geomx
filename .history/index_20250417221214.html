@@ -1,0 +1,904 @@
+Vou adicionar todo o conteúdo solicitado ao seu código HTML. Aqui está o arquivo completo com todas as seções adicionadas:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMX - Soluções Geoespaciais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="GeoMX Logo">
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#telemetria">Telemetria</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contato" class="btn-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soluções Geoespaciais Inteligentes</h1>
+                <p>Transformando dados geográficos em soluções estratégicas para o seu negócio</p>
+                <a href="#contato" class="btn-primary">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a GeoMX</h2>
+                <p>Excelência em soluções geoespaciais desde 2010</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>A GeoMX é uma empresa especializada em soluções geoespaciais, oferecendo tecnologias avançadas para análise de dados geográficos, mapeamento e geoprocessamento.</p>
+                    <p>Nossa missão é transformar dados geográficos complexos em informações estratégicas que impulsionam o crescimento e a eficiência dos nossos clientes.</p>
+                    <a href="#servicos" class="btn-secondary">Conheça Nossos Serviços</a>
+                </div>
+                <div class="sobre-image">
+                    <img src="about-image.jpg" alt="Equipe GeoMX">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas em geotecnologia</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Mapeamento Digital</h3>
+                    <p>Criação de mapas digitais precisos e detalhados para diversas aplicações.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Geoprocessamento</h3>
+                    <p>Processamento e análise de dados geográficos para tomada de decisões.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Sensoriamento Remoto</h3>
+                    <p>Análise de imagens de satélite para monitoramento ambiental e territorial.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-location-arrow"></i>
+                    </div>
+                    <h3>Geolocalização</h3>
+                    <p>Soluções de localização e rastreamento para otimização logística.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossas Soluções</h2>
+                <p>Tecnologia de ponta para seu negócio</p>
+            </div>
+            <div class="solucoes-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="tab1">GeoMX Mapper</button>
+                    <button class="tab-btn" data-tab="tab2">GeoMX Analytics</button>
+                    <button class="tab-btn" data-tab="tab3">GeoMX Track</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-content active" id="tab1">
+                        <div class="tab-image">
+                            <img src="solution1.jpg" alt="GeoMX Mapper">
+                        </div>
+                        <div class="tab-text">
+                            <h3>GeoMX Mapper</h3>
+                            <p>Plataforma completa para criação e gerenciamento de mapas digitais com alta precisão. Ideal para planejamento urbano, ambiental e infraestrutura.</p>
+                            <ul>
+                                <li>Mapeamento em alta resolução</li>
+                                <li>Integração com múltiplas fontes de dados</li>
+                                <li>Exportação em diversos formatos</li>
+                                <li>Atualizações em tempo real</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab2">
+                        <div class="tab-image">
+                            <img src="solution2.jpg" alt="GeoMX Analytics">
+                        </div>
+                        <div class="tab-text">
+                            <h3>GeoMX Analytics</h3>
+                            <p>Solução avançada de análise geoespacial com inteligência artificial para identificação de padrões e tendências em dados geográficos.</p>
+                            <ul>
+                                <li>Análise preditiva geoespacial</li>
+                                <li>Dashboards interativos</li>
+                                <li>Relatórios personalizados</li>
+                                <li>Integração com sistemas corporativos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <div class="tab-image">
+                            <img src="solution3.jpg" alt="GeoMX Track">
+                        </div>
+                        <div class="tab-text">
+                            <h3>GeoMX Track</h3>
+                            <p>Sistema de rastreamento e monitoramento em tempo real para frotas e ativos, otimizando rotas e reduzindo custos operacionais.</p>
+                            <ul>
+                                <li>Rastreamento em tempo real</li>
+                                <li>Otimização de rotas</li>
+                                <li>Alertas de segurança</li>
+                                <li>Relatórios de desempenho</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INÍCIO DAS NOVAS SEÇÕES -->
+    <!-- Menu de Navegação para Serviços de Telemetria -->
+    <div class="servicos-menu">
+        <div class="container">
+            <ul>
+                <li><a href="#telemetria">Telemetria Veicular</a></li>
+                <li><a href="#rede-can">Rede CAN</a></li>
+                <li><a href="#sensor-fadiga">Sensor de Fadiga</a></li>
+                <li><a href="#controle-passageiros">Controle de Passageiros</a></li>
+                <li><a href="#video-veicular">Vídeo Veicular</a></li>
+                <li><a href="#camera-corporal">Câmera Corporal</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seção de Telemetria Veicular -->
+    <section id="telemetria" class="servico-section telemetria-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Telemetria Veicular Completa</h2>
+                <p>A solução personalizada de gestão de frotas completa que coleta informações remotamente e proporciona diversos ganhos para sua empresa.</p>
+            </div>
+
+            <div class="servico-container">
+                <div class="servico-content">
+                    <h3 class="servico-subtitle">Preveja custos e planeje as revisões periódicas com mais precisão.</h3>
+                    
+                    <div class="servico-features">
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-chart-line"></i>
+                            <div class="feature-text">Tome decisões estratégicas com agilidade com fornecimento constante de informações sobre os veículos.</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-search"></i>
+                            <div class="feature-text">Identifique os gargalos na operação para resolvê-los com eficiência.</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contato" class="btn-cotacao">Solicite Sua Cotação</a>
+                </div>
+                
+                <div class="servico-image">
+                    <img src="telemetria-veicular.jpg" alt="Telemetria Veicular" onerror="this.src='https://via.placeholder.com/600x400?text=Telemetria+Veicular'">
+                </div>
+            </div>
+            
+            <div class="oferecemos-section">
+                <h3 class="oferecemos-title">O que oferecemos</h3>
+                
+                <div class="oferecemos-grid">
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-map-marker-alt"></i>
+                        <div class="oferecemos-text">Localização GPS</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-draw-polygon"></i>
+                        <div class="oferecemos-text">Cercas virtuais</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-lock"></i>
+                        <div class="oferecemos-text">Bloqueio do veículo</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-tachometer-alt"></i>
+                        <div class="oferecemos-text">Hodômetro de precisão</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-bell"></i>
+                        <div class="oferecemos-text">Alerta de eventos</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-clock"></i>
+                        <div class="oferecemos-text">Horímetro</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-tachometer-alt"></i>
+                        <div class="oferecemos-text">Registro de velocidade</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-truck"></i>
+                        <div class="oferecemos-text">Engate cavalo</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-exclamation-circle"></i>
+                        <div class="oferecemos-text">Botão de pânico</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-volume-up"></i>
+                        <div class="oferecemos-text">Sirene</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-map-pin"></i>
+                        <div class="oferecemos-text">Pontos de notificação</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-chart-bar"></i>
+                        <div class="oferecemos-text">Business Intelligence - BI</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-car"></i>
+                        <div class="oferecemos-text">Perfil de condução</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-hourglass-half"></i>
+                        <div class="oferecemos-text">Ociosidade do veículo</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="confianca-section">
+                <div class="confianca-cards">
+                    <div class="confianca-card">
+                        <i class="confianca-icon fas fa-medal"></i>
+                        <h3>Confiança</h3>
+                        <p>Há mais de 15 anos de experiência no setor de monitoramento e rastreamento veicular</p>
+                    </div>
+                    
+                    <div class="confianca-card">
+                        <i class="confianca-icon fas fa-headset"></i>
+                        <h3>Qualidade</h3>
+                        <p>Equipe de suporte disponível 24 horas por dia, 7 dias por semana.</p>
+                    </div>
+                    
+                    <div class="confianca-card">
+                        <i class="confianca-icon fas fa-map-marked-alt"></i>
+                        <h3>Tradição</h3>
+                        <p>Atuamos em todo território nacional, atendendo frotas de diferentes segmentos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Rede CAN -->
+    <section id="rede-can" class="servico-section rede-can-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Telemetria Avançada - Rede CAN</h2>
+                <p>Sistema de Monitoramento Logístico</p>
+            </div>
+            
+            <div class="servico-container reverse">
+                <div class="servico-content">
+                    <h3 class="servico-subtitle">É o sistema inovador que proporciona velocidade e confiabilidade no armazenamento de informações relevantes da sua frota.</h3>
+                    
+                    <div class="rede-can-features">
+                        <div class="rede-can-feature">
+                            <i class="rede-can-icon fas fa-trash-alt"></i>
+                            <div class="rede-can-text">
+                                <h4>Elimine componentes em excesso nos veículos</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="rede-can-feature">
+                            <i class="rede-can-icon fas fa-exclamation-triangle"></i>
+                            <div class="rede-can-text">
+                                <h4>Identifique falhas prematuras no sistema</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="rede-can-feature">
+                            <i class="rede-can-icon fas fa-microchip"></i>
+                            <div class="rede-can-text">
+                                <h4>Receba dados precisos dos sensores ligados ao motor</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="rede-can-feature">
+                            <i class="rede-can-icon fas fa-database"></i>
+                            <div class="rede-can-text">
+                                <h4>Colete dados de velocidade e distância seguros e corretos</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="servico-description">
+                        <h3>REDE CAN</h3>
+                        <p>A solução inteligente que possibilita o registro de informações em pontos estratégicos de forma eficaz.</p>
+                    </div>
+                    
+                    <a href="#contato" class="btn-cotacao">Solicite Sua Cotação</a>
+                </div>
+                
+                <div class="servico-image">
+                    <img src="rede-can.jpg" alt="Rede CAN" onerror="this.src='https://via.placeholder.com/600x400?text=Rede+CAN'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Sensor de Fadiga -->
+    <section id="sensor-fadiga" class="servico-section sensor-fadiga-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sensor de Fadiga</h2>
+                <p>Detector de comportamento de motoristas</p>
+            </div>
+            
+            <div class="servico-container">
+                <div class="servico-content">
+                    <h3 class="servico-subtitle">Sistema avançado de reconhecimento facial e de objetos, que reduz significativamente o risco de acidentes.</h3>
+                    
+                    <div class="servico-features">
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-exclamation-circle"></i>
+                            <div class="feature-text">Identifique comportamentos imprudentes e alerte os motoristas em tempo real.</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-shield-alt"></i>
+                            <div class="feature-text">Maior previsibilidade e segurança nas operações</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-chart-line"></i>
+                            <div class="feature-text">Monitore o comportamento de risco da frota reduzindo prejuízos</div>
+                        </div>
+                    </div>
+                    
+                    <div class="servico-description">
+                        <h3>SENSOR DE FADIGA</h3>
+                        <p>A inteligência artificial responsável por acompanhar o comportamento dos motoristas prevenindo distrações e acidentes.</p>
+                    </div>
+                    
+                    <a href="#contato" class="btn-cotacao">Solicite Sua Cotação</a>
+                </div>
+                
+                <div class="servico-image">
+                    <img src="sensor-fadiga.jpg" alt="Sensor de Fadiga" onerror="this.src='https://via.placeholder.com/600x400?text=Sensor+de+Fadiga'">
+                </div>
+            </div>
+            
+            <div class="oferecemos-section">
+                <h3 class="oferecemos-title">O que oferecemos</h3>
+                
+                <div class="oferecemos-grid">
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-smoking"></i>
+                        <div class="oferecemos-text">Tecnologia eficaz que detecta ocorrências programadas: uso de cigarro, uso de celular, sono e distrações.</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-car-crash"></i>
+                        <div class="oferecemos-text">Sistema inteligente que detecta aproximação e risco de colisão</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-volume-up"></i>
+                        <div class="oferecemos-text">Emissão de alertas sonoros na cabine para ativação dos condutores</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-file-alt"></i>
+                        <div class="oferecemos-text">Relatórios em tempo real e acompanhamento das ocorrências sobre a performance dos motoristas para otimizar sua gestão.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sensor-fadiga-images">
+                <div class="sensor-image">
+                    <img src="dms-lateral.jpg" alt="DMS Lateral" onerror="this.src='https://via.placeholder.com/300x200?text=DMS+Lateral'">
+                </div>
+                
+                <div class="sensor-image">
+                    <img src="fadiga-jc400.jpg" alt="Fadiga JC400" onerror="this.src='https://via.placeholder.com/300x200?text=Fadiga+JC400'">
+                </div>
+                
+                <div class="sensor-image">
+                    <img src="fadiga-jc400-frente.jpg" alt="Fadiga JC400 Frente" onerror="this.src='https://via.placeholder.com/300x200?text=Fadiga+JC400+Frente'">
+                </div>
+            </div>
+            
+            <div class="funcionamento-section">
+                <h3 class="funcionamento-title">Funcionamento</h3>
+                
+                <div class="funcionamento-items">
+                    <div class="funcionamento-item">
+                        <i class="funcionamento-check fas fa-check-circle"></i>
+                        <div class="funcionamento-text">Reconhecimento facial para identificação precisa dos condutores</div>
+                    </div>
+                </div>
+                
+                <h3 class="funcionamento-title">Plataforma</h3>
+                
+                <div class="funcionamento-items">
+                    <div class="funcionamento-item">
+                        <i class="funcionamento-check fas fa-check-circle"></i>
+                        <div class="funcionamento-text">Relatórios completos e em tempo real de tudo que acontece com seus motoristas para otimização da sua gestão.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Controle de Passageiros -->
+    <section id="controle-passageiros" class="servico-section controle-passageiros-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Controle de Passageiros</h2>
+                <p>Sistema de controle de embarque e desembarque</p>
+            </div>
+            
+            <div class="servico-container reverse">
+                <div class="servico-content">
+                    <h3 class="servico-subtitle">É uma solução inovadora e completa para gestão de controle de acessos.</h3>
+                    
+                    <div class="servico-features">
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-chart-bar"></i>
+                            <div class="feature-text">Mais dinamismo e agilidade em gerar relatórios precisos através da plataforma</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-bolt"></i>
+                            <div class="feature-text">Agilidade e segurança na tomada de decisões estratégicas</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-id-card"></i>
+                            <div class="feature-text">Estrutura completa de acompanhamento e identificação dos passageiros</div>
+                        </div>
+                    </div>
+                    
+                    <div class="servico-description">
+                        <h3>CONTROLE DE ACESSO DE PASSAGEIROS</h3>
+                        <p>A solução completa para gestão de controle de entradas e saídas.</p>
+                    </div>
+                    
+                    <a href="#contato" class="btn-cotacao">Solicite Sua Cotação</a>
+                </div>
+                
+                <div class="servico-image">
+                    <img src="controle-passageiros.jpg" alt="Controle de Passageiros" onerror="this.src='https://via.placeholder.com/600x400?text=Controle+de+Passageiros'">
+                </div>
+            </div>
+            
+            <div class="oferecemos-section">
+                <h3 class="oferecemos-title">O que oferecemos</h3>
+                
+                <div class="oferecemos-grid">
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-user-clock"></i>
+                        <div class="oferecemos-text">Registro em tempo real do passageiro</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-users"></i>
+                        <div class="oferecemos-text">Controle de ocupação para o replanejamento de linhas</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-chart-line"></i>
+                        <div class="oferecemos-text">Análise de frequência por colaboradores</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-calendar-check"></i>
+                        <div class="oferecemos-text">Análise de assiduidade com histórico de pontualidade</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Sistema de Vídeo Veicular -->
+    <section id="video-veicular" class="servico-section video-veicular-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sistema de Vídeo Veicular</h2>
+                <p>Sistema de informações via imagens</p>
+            </div>
+            
+            <div class="servico-container">
+                <div class="servico-content">
+                    <h3 class="servico-subtitle">É a ferramenta tecnológica perfeita de monitoramento que garante mais atenção e eficácia para gerar resultados positivos na operação.</h3>
+                    
+                    <div class="servico-features">
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-shield-alt"></i>
+                            <div class="feature-text">Mais segurança e economia com controle de fraudes, pequenos furtos e o desgaste prematuro do veículo por má condução</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-car"></i>
+                            <div class="feature-text">Mais tranquilidade por inibir erros de conduta, diminuindo as infrações no trânsito</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-search"></i>
+                            <div class="feature-text">Prevenção contra assaltos e receptações, com reconhecimento de placas e autores</div>
+                        </div>
+                    </div>
+                    
+                    <div class="servico-description">
+                        <h3>SISTEMA DE VÍDEO VEICULAR - MDRV</h3>
+                        <p>A solução mais eficaz para promover a mudança de comportamento para uma condução sem risco.</p>
+                    </div>
+                    
+                    <a href="#contato" class="btn-cotacao">Solicite Sua Cotação</a>
+                </div>
+                
+                <div class="servico-image">
+                    <img src="video-veicular.jpg" alt="Sistema de Vídeo Veicular" onerror="this.src='https://via.placeholder.com/600x400?text=Sistema+de+Vídeo+Veicular'">
+                </div>
+            </div>
+            
+            <div class="oferecemos-section">
+                <h3 class="oferecemos-title">O que oferecemos</h3>
+                
+                <div class="oferecemos-grid">
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-video"></i>
+                        <div class="oferecemos-text">Câmera Full HD</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-desktop"></i>
+                        <div class="oferecemos-text">Controle da frota por uma plataforma de software on-line</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-hdd"></i>
+                        <div class="oferecemos-text">Armazenamento de imagens</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-cloud-upload-alt"></i>
+                        <div class="oferecemos-text">Upload e Downloads Programado</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-map-marker-alt"></i>
+                        <div class="oferecemos-text">Localização de velocidade</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Câmera Corporal -->
+    <section id="camera-corporal" class="servico-section camera-corporal-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Câmera Corporal</h2>
+                <p>É uma tecnologia compacta e robusta que garante o monitoramento de operações com imagens de alta qualidade.</p>
+            </div>
+            
+            <div class="servico-container reverse">
+                <div class="servico-content">
+                    <div class="servico-features">
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-eye"></i>
+                            <div class="feature-text">Previna ocorrências envolvendo o setor de vigilância e operações tendo acesso a todas as imagens</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-gavel"></i>
+                            <div class="feature-text">Provas concretas para eventuais defesas em incertezas jurídicas</div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="feature-icon fas fa-users"></i>
+                            <div class="feature-text">Monitoramento da equipe em áreas movimentadas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="servico-description">
+                        <h3>BODYCAM</h3>
+                        <p>A solução em segurança capaz de transmitir mais transparência nas ações e evitar incidentes</p>
+                    </div>
+                    
+                    <a href="#contato" class="btn-cotacao">Solicite Sua Cotação</a>
+                </div>
+                
+                <div class="servico-image">
+                    <img src="camera-corporal.jpg" alt="Câmera Corporal" onerror="this.src='https://via.placeholder.com/600x400?text=Câmera+Corporal'">
+                </div>
+            </div>
+            
+            <div class="oferecemos-section">
+                <h3 class="oferecemos-title">O que oferecemos</h3>
+                
+                <div class="oferecemos-grid">
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-video"></i>
+                        <div class="oferecemos-text">Videomonitoramento em tempo real</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-film"></i>
+                        <div class="oferecemos-text">Captura de vídeo em alta qualidade</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-moon"></i>
+                        <div class="oferecemos-text">Visão nítida noturna</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-cogs"></i>
+                        <div class="oferecemos-text">Funcionalidades configuráveis</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-microphone"></i>
+                        <div class="oferecemos-text">Gravação de Áudio</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-clock"></i>
+                        <div class="oferecemos-text">Filmagem 24 horas</div>
+                    </div>
+                    
+                    <div class="oferecemos-item">
+                        <i class="oferecemos-icon fas fa-key"></i>
+                        <div class="oferecemos-text">Senha Pessoal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM DAS NOVAS SEÇÕES -->
+
+    <section id="clientes" class="clientes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Clientes</h2>
+                <p>Empresas que confiam em nossas soluções</p>
+            </div>
+            <div class="clientes-logos">
+                <div class="cliente-logo">
+                    <img src="cliente1.png" alt="Cliente 1">
+                </div>
+                <div class="cliente-logo">
+                    <img src="cliente2.png" alt="Cliente 2">
+                </div>
+                <div class="cliente-logo">
+                    <img src="cliente3.png" alt="Cliente 3">
+                </div>
+                <div class="cliente-logo">
+                    <img src="cliente4.png" alt="Cliente 4">
+                </div>
+                <div class="cliente-logo">
+                    <img src="cliente5.png" alt="Cliente 5">
+                </div>
+                <div class="cliente-logo">
+                    <img src="cliente6.png" alt="Cliente 6">
+                </div>
+            </div>
+            <div class="depoimentos">
+                <div class="depoimento-slider">
+                    <div class="depoimento">
+                        <div class="depoimento-text">
+                            <p>"A GeoMX transformou nossa operação logística com soluções de geolocalização precisas e eficientes. Reduzimos custos operacionais em 30%."</p>
+                        </div>
+                        <div class="depoimento-autor">
+                            <img src="depoimento1.jpg" alt="Autor do Depoimento">
+                            <div>
+                                <h4>Carlos Silva</h4>
+                                <p>Diretor de Operações, Logística Express</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento">
+                        <div class="depoimento-text">
+                            <p>"O sistema de análise geoespacial da GeoMX nos permitiu identificar oportunidades de mercado que não conseguíamos visualizar antes."</p>
+                        </div>
+                        <div class="depoimento-autor">
+                            <img src="depoimento2.jpg" alt="Autor do Depoimento">
+                            <div>
+                                <h4>Ana Ferreira</h4>
+                                <p>CEO, Retail Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para atender sua empresa</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-form">
+                    <form id="formulario-contato">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1000, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@geomx.com.br</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo-white.png" alt="GeoMX Logo">
+                    <p>Transformando dados geográficos em soluções estratégicas</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#clientes">Clientes</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#servicos">Mapeamento Digital</a></li>
+                            <li><a href="#servicos">Geoprocessamento</a></li>
+                            <li><a href="#servicos">Sensoriamento Remoto</a></li>
+                            <li><a href="#servicos">Geolocalização</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GeoMX. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botão de WhatsApp Flutuante -->
+    <a href="https://wa.me/SEUNUMERODETELEFONE" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="script.js"></script>
+    
+    <!-- Script para animações no scroll -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Função para animar elementos quando visíveis
+        function animateOnScroll() {
+          const elements = document.querySelectorAll('.section-header, .servico-content, .servico-image, .oferecemos-item, .confianca-card, .rede-can-feature, .sensor-image, .funcionamento-item');
+          
+          elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementPosition < windowHeight - 100) {
+              element.classList.add('animated');
+            }
+          });
+        }
+        
+        // Executar no carregamento e no scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+      });
+    </script>
+</body>
+</html>

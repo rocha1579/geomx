@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetria Veicular - GeoMX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para a página de Telemetria Veicular */
+        .hero-telemetria {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/telemetria-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .telemetria-carousel {
+            max-width: 1000px;
+            margin: 40px auto;
+            position: relative;
+        }
+        
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            transition: transform 0.5s ease;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            display: block;
+        }
+        
+        .carousel-caption {
+            background: rgba(44, 62, 80, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .carousel-caption h3 {
+            margin-top: 0;
+        }
+        
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        .carousel-nav button {
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-nav button:hover {
+            background: white;
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-indicator.active {
+            background: #2c3e50;
+            transform: scale(1.2);
+        }
+        
+        .telemetria-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-card i {
+            font-size: 40px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-telemetria {
+                padding: 60px 0;
+            }
+            
+            .telemetria-benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Inclua seu header aqui -->
+    
+    <section class="hero-telemetria">
+        <div class="container">
+            <h1>Telemetria Veicular</h1>
+            <p>Solução personalizada de gestão de frotas que coleta informações remotamente</p>
+        </div>
+    </section>
+    
+    <section class="telemetria-content">
+        <div class="container">
+            <div class="telemetria-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="images/telemetria1.jpg" alt="Painel de Controle Telemetria">
+                        <div class="carousel-caption">
+                            <h3>Painel de Controle Completo</h3>
+                            <p>Acompanhe todos os dados da sua frota em tempo real</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/telemetria2.jpg" alt="Relatórios Detalhados">
+                        <div class="carousel-caption">
+                            <h3>Relatórios Detalhados</h3>
+                            <p>Gere relatórios personalizados para análise de desempenho</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/telemetria3.jpg" alt="Monitoramento em Tempo Real">
+                        <div class="carousel-caption">
+                            <h3>Monitoramento 24/7</h3>
+                            <p>Acompanhe sua frota a qualquer momento, de qualquer lugar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <span class="carousel-indicator active"></span>
+                    <span class="carousel-indicator"></span>
+                    <span class="carousel-indicator"></span>
+                </div>
+            </div>
+            
+            <div class="telemetria-description">
+                <h2>Solução Completa para Gestão de Frotas</h2>
+                <p>Nossa solução de telemetria veicular oferece um sistema integrado para monitoramento e gestão de frotas, proporcionando maior eficiência operacional e redução de custos. Com tecnologia avançada, coletamos dados em tempo real sobre localização, desempenho do veículo, consumo de combustível e muito mais.</p>
+                
+                <div class="telemetria-benefits">
+                    <div class="benefit-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Rastreamento em Tempo Real</h3>
+                        <p>Monitore a localização exata de todos os veículos da frota com atualizações em tempo real.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-gas-pump"></i>
+                        <h3>Controle de Combustível</h3>
+                        <p>Reduza custos com relatórios precisos de consumo e detecção de irregularidades.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Alertas Inteligentes</h3>
+                        <p>Receba notificações sobre excesso de velocidade, frenagens bruscas e outras ocorrências.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Análise de Desempenho</h3>
+                        <p>Avalie o desempenho de motoristas e veículos com dados históricos e comparativos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Script do carrossel
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+            
+            function updateCarousel() {
+                slides.forEach((slide, index) => {
+                    slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+                });
+                
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+            
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateCarousel();
+            }
+            
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Auto-advance (opcional)
+            let interval = setInterval(nextSlide, 5000);
+            
+            // Pause on hover
+            const carousel = document.querySelector('.carousel-container');
+            carousel.addEventListener('mouseenter', () => clearInterval(interval));
+            carousel.addEventListener('mouseleave', () => {
+                interval = setInterval(nextSlide, 5000);
+            });
+        });
+    </script>
+    
+    <!-- Inclua seu footer aqui -->
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Otimizações de CSS para melhorar performance */
+
+/* 1. Reduzir o impacto das animações */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* 2. Otimização para carregamento de imagens */
+  .lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .lazy.loaded {
+    opacity: 1;
+  }
+  
+  /* 3. Otimização para renderização de seções */
+  section {
+    will-change: opacity;
+  }
+  
+  /* 4. Otimização para o menu de navegação */
+  .menu,
+  .servicos-menu {
+    will-change: transform;
+  }
+  
+  /* 5. Otimização para o dark mode toggle e cookie consent */
+  .dark-mode-toggle {
+    display: none; /* Será mostrado via JavaScript após o carregamento inicial */
+  }
+  
+  /* 6. Otimização para dispositivos móveis */
+  @media (max-width: 768px) {
+    /* Simplifica algumas animações em dispositivos móveis */
+    .servico-card:hover,
+    .social-icon:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover {
+      transform: none !important;
+      box-shadow: none !important;
+    }
+  
+    /* Reduz o tamanho de algumas fontes para melhor renderização */
+    .hero-content h1 {
+      font-size: 2rem !important;
+    }
+  
+    .section-header h2 {
+      font-size: 1.7rem !important;
+    }
+  
+    /* Simplifica o layout para melhor performance */
+    .servicos-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+  
+    .oferecemos-grid {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+  
+  /* 7. Otimização para o carregamento inicial */
+  body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* 8. Otimização para o scroll */
+  html {
+    scroll-padding-top: 80px; /* Ajusta o scroll para considerar o header fixo */
+  }
+  
+  /* 9. Otimização para o dark mode */
+  .dark-mode-toggle {
+    transition: transform 0.3s ease !important;
+  }
+  
+  /* 10. Otimização para o cookie consent */
+  .cookie-consent {
+    transition: transform 0.3s ease !important;
+  }
+  

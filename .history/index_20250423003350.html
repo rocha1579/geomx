@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMX - Soluções Geoespaciais</title>
+    <style>
+        /* Reset e estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            overflow: hidden;
+            height: 100vh;
+            background: linear-gradient(135deg, #0a2e52 0%, #1a56a7 100%);
+            color: white;
+        }
+        
+        /* Container da capa */
+        .cover-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        /* Efeito de sobreposição */
+        .cover-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        
+        /* Conteúdo da capa */
+        .cover-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .cover-logo {
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .cover-logo img {
+            max-width: 250px;
+            height: auto;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slideUp 1s ease-out;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .btn-enter {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #fff;
+            color: #1a56a7;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-enter:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Slideshow de imagens de fundo */
+        .cover-slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+        
+        .cover-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .cover-slide.active {
+            opacity: 1;
+        }
+        
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .cover-logo img {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <!-- Slideshow de imagens de fundo -->
+        <div class="cover-slideshow">
+            <div class="cover-slide active" style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="cover-slide" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="cover-slide" style="background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="cover-slide" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+        </div>
+        
+        <div class="cover-overlay"></div>
+        
+        <div class="cover-content">
+            <div class="cover-logo">
+                <img src="images/logo_geomx.png" alt="GeoMX Logo">
+            </div>
+            <h1>Soluções Geoespaciais Inteligentes</h1>
+            <p>Transformando dados geográficos em informações estratégicas para impulsionar seu negócio</p>
+            <a href="home.html" class="btn-enter">Acessar o Site</a>
+        </div>
+    </div>
+    
+    <script>
+        // Controle do slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.cover-slide');
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        
+        // Troca de slide a cada 5 segundos
+        setInterval(nextSlide, 5000);
+        
+        // Redirecionamento suave ao clicar no botão
+        document.querySelector('.btn-enter').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                window.location.href = this.getAttribute('href');
+            }, 500);
+        });
+        
+        // Efeito fade-in ao carregar a página
+        document.body.style.opacity = '0';
+        setTimeout(() => {
+            document.body.style.transition = 'opacity 1s ease-in-out';
+            document.body.style.opacity = '1';
+        }, 100);
+    </script>
+</body>
+</html>

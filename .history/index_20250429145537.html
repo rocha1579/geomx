@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMX</title>
+    <link rel="stylesheet" href="styles-dark-mode.css">
+    <script src="dark-mode.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo geomx.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Adicionando estilos específicos para os ícones do menu */
+        .menu li a i {
+            margin-right: 8px;
+            width: 20px;
+            text-align: center;
+            color: inherit; /* Herda a cor do texto do link */
+        }
+        
+        .menu li a.btn-contato i {
+            margin-right: 5px;
+        }
+        
+        /* Espaçamento entre os itens do menu */
+        .menu li:not(:last-child) {
+            margin-right: 2px;
+        }
+        
+        /* Estilo especial para o item de Acesso Cliente */
+        .menu li a[target="_blank"] {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu li a[target="_blank"]:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="menu-fix.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo geomx.png" alt="GeoMX Logo">
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="#inicio"><i class="fas fa-home fa-fw"></i></a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="telemetria.html">Telemetria</a></li>
+                    <li><a href="#clientes"><i class="fas fa-users fa-fw"></i> Clientes</a></li>
+                    <li><a href="https://sis.segminas.com.br/?Login" target="_blank" class="btn-acesso"><i class="fas fa-sign-in-alt fa-fw"></i> Acesso</a></li>
+                    <li><a href="#contato" class="btn-contato"><i class="fas fa-envelope fa-fw"></i> Contato</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soluções de Rastreamento Veicular </h1>
+                <p>Segurança garantida para veículos rodarem 24h e obterem informações otimizadas e custos reduzidos.</p>
+                <a href="#contato" class="btn-primary">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+    <section id="servicos-telemetria" class="servicos-telemetria">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços de Telemetria</h2>
+                <p>Soluções avançadas para monitoramento e controle de frotas</p>
+            </div>
+            
+            <div class="telemetria-grid">
+                <a href="telemetria.html" class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Telemetria Veicular</h3>
+                    <p>Solução personalizada de gestão de frotas que coleta informações remotamente.</p>
+                    <span class="telemetria-link">Saiba mais <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="rede-can.html" class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Rede CAN</h3>
+                    <p>Sistema inovador que proporciona velocidade e confiabilidade no armazenamento de informações.</p>
+                    <span class="telemetria-link">Saiba mais <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="sensor-fadiga.html" class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <img src="images/fadiga.png" alt="Sensor de Fadiga" class="rounded-icon">
+                    </div>
+                    <h3>Sensor de Fadiga</h3>
+                    <p>Detector de comportamento de motoristas que reduz significativamente o risco de acidentes.</p>
+                    <span class="telemetria-link">Saiba mais <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="controle-passageiros.html" class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Controle de Passageiros</h3>
+                    <p>Sistema de controle de embarque e desembarque para gestão de acessos.</p>
+                    <span class="telemetria-link">Saiba mais <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="video-veicular.html" class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <img src="images/Cópia_de_DVR__12_-removebg-preview (1).png" alt="Vídeo Veicular" class="rounded-icon larger-icon">
+                    </div>
+                    <h3>Vídeo Veicular</h3>
+                    <p>Sistema de informações via imagens para monitoramento eficaz da operação.</p>
+                    <span class="telemetria-link">Saiba mais <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="camera-corporal.html" class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <img src="images/bodycam.png" alt="Câmera Corporal" class="rounded-icon">
+                    </div>
+                    <h3>Câmera Corporal</h3>
+                    <p>Tecnologia compacta e robusta que garante o monitoramento de operações com imagens de alta qualidade.</p>
+                    <span class="telemetria-link">Saiba mais <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+      .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                      url('images/Cópia de DVR (14).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<section class="video-section">
+    <style>
+      .video-section {
+        padding: 40px 20px;
+        background-color: #f5f7fa;
+        font-family: Arial, sans-serif;
+      }
+  
+      .video-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+  
+      .section-header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .section-header h2 {
+        font-size: 32px;
+        color: #1d3557;
+        margin-bottom: 10px;
+      }
+  
+      .section-header p {
+        font-size: 18px;
+        color: #457b9d;
+      }
+  
+      .video-container {
+        width: 100%;
+        max-height: 500px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+  
+      .video-container iframe {
+        width: 100%;
+        height: 500px;
+      }
+  
+      /* NOVA SEÇÃO COM IMAGEM */
+      .image-banner-section {
+        position: relative;
+        margin-top: 60px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+  
+      .image-banner-section img {
+        width: 100%;
+        display: block;
+        filter: none;
+      }
+  
+      .image-banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        max-width: 90%;
+      }
+  
+      .image-banner-text h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+  
+      .image-banner-text p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+  
+      @media (max-width: 768px) {
+        .image-banner-text h3 {
+          font-size: 22px;
+        }
+  
+        .image-banner-text p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a GeoMX</h2>
+                <p>Excelência em soluções</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Somos uma empresa brasileira especializada em soluções completas para logística de informação veicular, que atua no setor de rastreamento e monitoramento de automóveis há mais de 21 anos, com destaque no controle e gerenciamento de frotas e telemetria.
+    
+                        Atuando em todo território nacional, com nossa central de operações situada em Belo Horizonte, nos propomos a entregar soluções de qualidade, sempre buscando satisfação e praticidade para nossos clientes.
+    
+                        A qualidade dos nossos serviços e produtos são a prova do constante aperfeiçoamento do trabalho, com apoio da tecnologia mais moderna e inovadora existente. Além do contínuo trabalho de capacitação de nossos profissionais internos e externos, mantendo a qualidade, oferecemos atendimento especializado e personalizado em suporte e pós vendas.</p>
+                    <p>Nossa missão é transformar dados geográficos complexos em informações estratégicas que impulsionam o crescimento e a eficiência dos nossos clientes.</p>
+                    <a href="#servicos" class="btn-secondary">Conheça Nossos Serviços</a>
+                </div>
+    
+                <div class="sobre-image">
+                    <div class="carousel">
+                        <img src="images/Foto-22.png" class="carousel-image active" alt="Imagem 1">
+                        <img src="images/Foto-32.png" class="carousel-image" alt="Imagem 2">
+                        <img src="images/Foto-52 (1).png" class="carousel-image" alt="Imagem 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .carousel {
+                position: relative;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+    
+            .carousel-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+    
+            .carousel-image.active {
+                opacity: 1;
+                position: relative;
+            }
+    
+            .sobre-image {
+                width: 100%;
+                max-width: 500px; /* ajuste conforme o layout */
+                margin: auto;
+            }
+    
+            .carousel img {
+                width: 100%;
+                display: block;
+                border-radius: 8px;
+            }
+        </style>
+    
+        <script>
+            let current = 0;
+            const images = document.querySelectorAll('.carousel-image');
+    
+            setInterval(() => {
+                images[current].classList.remove('active');
+                current = (current + 1) % images.length;
+                images[current].classList.add('active');
+            }, 3000);
+        </script>
+    </section>
+    
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas em geotecnologia</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Mapeamento Digital</h3>
+                    <p>Criação de mapas digitais precisos e detalhados para diversas aplicações.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Geoprocessamento</h3>
+                    <p>Processamento e análise de dados geográficos para tomada de decisões.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Sensoriamento Remoto</h3>
+                    <p>Análise de imagens de satélite para monitoramento ambiental e territorial.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-location-arrow"></i>
+                    </div>
+                    <h3>Geolocalização</h3>
+                    <p>Soluções de localização e rastreamento para otimização logística.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossas Soluções</h2>
+                <p>Tecnologia de ponta para seu negócio</p>
+            </div>
+            <div class="solucoes-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="tab1">GeoMX Mapper</button>
+                    <button class="tab-btn" data-tab="tab2">GeoMX Analytics</button>
+                    <button class="tab-btn" data-tab="tab3">GeoMX Track</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-content active" id="tab1">
+                        <div class="tab-image">
+                            <img src="images/solution1.png" alt="GeoMX Mapper">
+                        </div>
+                        <div class="tab-text">
+                            <h3>GeoMX Mapper</h3>
+                            <p>Plataforma completa para criação e gerenciamento de mapas digitais com alta precisão. Ideal para planejamento urbano, ambiental e infraestrutura.</p>
+                            <ul>
+                                <li>Mapeamento em alta resolução</li>
+                                <li>Integração com múltiplas fontes de dados</li>
+                                <li>Exportação em diversos formatos</li>
+                                <li>Atualizações em tempo real</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab2">
+                        <div class="tab-image">
+                            <img src="images/solution2.png" alt="GeoMX Analytics">
+                        </div>
+                        <div class="tab-text">
+                            <h3>GeoMX Analytics</h3>
+                            <p>Solução avançada de análise geoespacial com inteligência artificial para identificação de padrões e tendências em dados geográficos.</p>
+                            <ul>
+                                <li>Análise preditiva geoespacial</li>
+                                <li>Dashboards interativos</li>
+                                <li>Relatórios personalizados</li>
+                                <li>Integração com sistemas corporativos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <div class="tab-image">
+                            <img src="images/Cópia de DVR (1).png" alt="GeoMX Track">
+                        </div>
+                        <div class="tab-text">
+                            <h3>GeoMX Track</h3>
+                            <p>Sistema de rastreamento e monitoramento em tempo real para frotas e ativos, otimizando rotas e reduzindo custos operacionais.</p>
+                            <ul>
+                                <li>Rastreamento em tempo real</li>
+                                <li>Otimização de rotas</li>
+                                <li>Alertas de segurança</li>
+                                <li>Relatórios de desempenho</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="section-header">
+          <h2>Conheça a GeoMX</h2>
+          <p>Assista ao nosso vídeo institucional</p>
+        </div>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/L-S8uhNKN6Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+    
+        <!-- Seção com imagem abaixo -->
+        <div class="image-banner-section">
+          <img src="images/f44151d0-90f2-4305-8139-8807ac38c4e4.png" alt="Banner GeoMX" />
+          <div class="image-banner-text">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+      <style>
+          /* Estilos para a seção de vídeo */
+          .video-section {
+              padding: 60px 0;
+              background-color: #f9f9f9;
+          }
+          
+          .video-container {
+              position: relative;
+              padding-bottom: 56.25%; /* Proporção 16:9 */
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+              margin: 30px auto;
+              border-radius: 8px;
+              box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          }
+          
+          .video-container iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border: none;
+          }
+          
+          @media (max-width: 768px) {
+              .video-section {
+                  padding: 30px 0;
+              }
+          }
+      </style>
+
+    <section id="clientes" class="clientes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Clientes</h2>
+                <p>Empresas que confiam em nossas soluções</p>
+            </div>
+            <div class="clientes-logos">
+                <div class="cliente-logo">
+                    <img src="images/cliente1.png" alt="Cliente 1">
+                </div>
+                <div class="cliente-logo">
+                    <img src="images/cliente2.png" alt="Cliente 2">
+                </div>
+                <div class="cliente-logo">
+                    <img src="images/cliente3.png" alt="Cliente 3">
+                </div>
+                <div class="cliente-logo">
+                    <img src="images/cliente4.png" alt="Cliente 4">
+                </div>
+                <div class="cliente-logo">
+                    <img src="images/cliente5.png" alt="Cliente 5">
+                </div>
+                <div class="cliente-logo">
+                    <img src="images/cliente6.png" alt="Cliente 6">
+                </div>
+            </div>
+            <div class="depoimentos">
+                <div class="section-header">
+                    <h2>Depoimentos</h2>
+                    <p>O que nossos clientes dizem sobre nós</p>
+                </div>
+                <div class="depoimento-slider">
+                    <div class="depoimento">
+                        <div class="depoimento-text">
+                            <p>"A GEOMX possui uma Equipe experiente, atenciosa, sempre pronta a nos ajudar a resolver qualquer tipo óbice referente aos seus equipamentos e sistemas de monitoramento instalados em nossa frota. São profissionais dedicados que estão sempre em busca da excelência no atendimento. Sempre fui muito bem atendido por toda a equipe e por isso, indico a todos!"</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="depoimento-autor">
+                            <img src="images/alessandro.png" alt="Autor do Depoimento">
+                            <div>
+                                <h4>Alessandro Oliveira Navarros</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento">
+                        <div class="depoimento-text">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="depoimento-autor">
+                            <img src="images/debora.png" alt="Autor do Depoimento">
+                            <div>
+                                <h4>Debora</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento">
+                        <div class="depoimento-text">
+                            <p>"Gostaria de agradecer pelo apoio e suporte de toda equipe. Desde o setor comercial até a equipe de campo. Profissionais qualificados e sempre dispostos a ajudar no que for necessário, sem falar na agilidade no processo de implantação do sistema e instalação dos equipamentos.
+                                Recomendo essa empresa."</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="depoimento-autor">
+                            <img src="images/emanoel.png" alt="Autor do Depoimento">
+                            <div>
+                                <h4>Emanoel</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="google-reviews-link">
+                    <a href="https://g.page/r/Cd9b5YQJ3hFHEB0/review" target="_blank" class="btn-google-reviews">
+                        <i class="fab fa-google"></i> Deixe seu depoimento no Google
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .depoimentos {
+                margin-top: 50px;
+                padding: 40px 0;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+            }
+            
+            .depoimento-slider {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 auto;
+                max-width: 1000px;
+                padding: 20px 0;
+            }
+            
+            .depoimento {
+                flex: 0 0 auto;
+                width: 100%;
+                scroll-snap-align: start;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+            
+            .depoimento-text {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+                position: relative;
+                margin-bottom: 20px;
+            }
+            
+            .depoimento-text:after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 40px;
+                border-width: 15px 15px 0;
+                border-style: solid;
+                border-color: white transparent transparent;
+            }
+            
+            .depoimento-autor {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+            }
+            
+            .depoimento-autor img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 15px;
+                border: 3px solid #2c3e50;
+            }
+            
+            .depoimento-autor h4 {
+                margin: 0;
+                color: #2c3e50;
+            }
+            
+            .depoimento-autor p {
+                margin: 5px 0 0;
+                color: #777;
+                font-size: 14px;
+            }
+            
+            .rating {
+                color: #FFD700;
+                margin-top: 10px;
+            }
+            
+            .slider-controls {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+            
+            .slider-controls button {
+                background: #2c3e50;
+                color: white;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            
+            .slider-controls button:hover {
+                background: #1a252f;
+            }
+            
+            .google-reviews-link {
+                text-align: center;
+                margin-top: 30px;
+            }
+            
+            .btn-google-reviews {
+                display: inline-flex;
+                align-items: center;
+                background: #4285F4;
+                color: white;
+                padding: 12px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: all 0.3s ease;
+            }
+            
+            .btn-google-reviews i {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+            
+            .btn-google-reviews:hover {
+                background: #3367D6;
+                transform: translateY(-2px);
+            }
+        </style>
+        
+        <script>
+            // Script para o slider de depoimentos
+            document.addEventListener('DOMContentLoaded', function() {
+                const slider = document.querySelector('.depoimento-slider');
+                const prevBtn = document.querySelector('.prev-btn');
+                const nextBtn = document.querySelector('.next-btn');
+                const depoimentos = document.querySelectorAll('.depoimento');
+                let currentIndex = 0;
+                
+                function updateSlider() {
+                    slider.scrollTo({
+                        left: depoimentos[currentIndex].offsetLeft - slider.offsetLeft,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                prevBtn.addEventListener('click', function() {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : depoimentos.length - 1;
+                    updateSlider();
+                });
+                
+                nextBtn.addEventListener('click', function() {
+                    currentIndex = (currentIndex < depoimentos.length - 1) ? currentIndex + 1 : 0;
+                    updateSlider();
+                });
+                
+                // Opcional: rotação automática
+                setInterval(function() {
+                    currentIndex = (currentIndex < depoimentos.length - 1) ? currentIndex + 1 : 0;
+                    updateSlider();
+                }, 5000);
+            });
+        </script>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para atender sua empresa</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-form">
+                    <form id="formulario-contato">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                    <img src="images/Cópia_de_DVR__2_-removebg-preview (2).png">
+
+                </div>
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Padre Marinho, 37 Minas Gerais - Bh</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>0800 580 2866<br>(31) 9 9739-6385</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>comercial@geomx.com.br</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/geomxbrasil" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/geomx" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/geomx_brasil/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC2VQmLmBy8NQ2N8LnCI59Cg" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.955249439259!2d-43.92309932514979!3d-19.926290538192287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699cd28e77955%3A0xd93406e577a22ba!2sR.%20Padre%20Marinho%2C%2037%20-%20Santa%20Efig%C3%AAnia%2C%20Belo%20Horizonte%20-%20MG%2C%2030140-040!5e0!3m2!1spt-BR!2sbr!4v1745327561781!5m2!1spt-BR!2sbr" 
+    width="100%" 
+    height="400" 
+    style="border:0; border-radius: 12px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo geomx.png" alt="GeoMX Logo">
+                <p>Transformando dados geográficos em soluções estratégicas</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Mapeamento Digital</a></li>
+                        <li><a href="#servicos">Geoprocessamento</a></li>
+                        <li><a href="#servicos">Sensoriamento Remoto</a></li>
+                        <li><a href="#servicos">Geolocalização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-images">
+            <img src="images/apple.png" alt="Imagem 1" class="footer-img">
+            <img src="images/google play.png" alt="Imagem 2" class="footer-img">
+        </div>
+<style>
+    .footer-images {
+    text-align: left; /* Alinha conteúdo à esquerda */
+    margin: 20px 0;
+}
+
+.footer-img {
+    max-width: 120px; /* Diminui o tamanho */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espaço entre as imagens */
+}
+</style>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GeoMX. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+        <button id="cookie-accept">Aceitar</button>
+    </div>
+    
+    <a href="https://wa.me/31997396385" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="script.js"></script>
+<div id="chatbot-container" class="chatbot-container">
+    <div class="chatbot-header">
+        <h4>Assistente Virtual GeoMX</h4>
+        <button id="chatbot-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="chatbot-messages" class="chatbot-messages">
+        <div class="chatbot-message bot">
+            <p>Olá! Sou o assistente virtual da GeoMX. Por favor, escolha uma opção:</p>
+            <div class="chatbot-options">
+                <p>1 - Nossos Serviços</p>
+                <p>2 - Telemetria e Rastreamento</p>
+                <p>3 - Contato e Suporte</p>
+                <p>4 - Localização e Horários</p>
+                <p>5 - Acesso ao Sistema</p>
+            </div>
+            <p>Digite apenas o número da opção desejada.</p>
+        </div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbot-input" placeholder="Digite o número da opção..." pattern="[1-5]" title="Digite apenas números de 1 a 5">
+        <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<button id="chatbot-toggle" class="chatbot-toggle">
+    <i class="fas fa-robot"></i>
+</button>
+
+<style>
+    /* Estilos do chatbot */
+    .chatbot-container {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 300px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #ddd;
+    }
+    
+    .chatbot-container.active {
+        display: flex;
+    }
+    
+    .chatbot-header {
+        background: #2c3e50;
+        color: white;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .chatbot-header h4 {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    #chatbot-close {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .chatbot-messages {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background: #f9f9f9;
+    }
+    
+    .chatbot-message {
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        border-radius: 18px;
+        max-width: 80%;
+        font-size: 14px;
+    }
+    
+    .chatbot-message.bot {
+        background: #e3e3e3;
+        border-bottom-left-radius: 5px;
+        align-self: flex-start;
+    }
+    
+    .chatbot-message.user {
+        background: #2c3e50;
+        color: white;
+        border-bottom-right-radius: 5px;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+    
+    .chatbot-input {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        background: white;
+    }
+    
+    #chatbot-input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        outline: none;
+    }
+    
+    #chatbot-send {
+        background: #2c3e50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+    
+    .chatbot-toggle {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+        background: #2c3e50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chatbot-toggle:hover {
+        background: #1a252f;
+    }
+    
+    .chatbot-options {
+        margin: 10px 0;
+        padding-left: 15px;
+    }
+    
+    .chatbot-options p {
+        margin: 8px 0;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+</style>
+
+<script>
+    // Script do chatbot com menu numérico
+    document.addEventListener('DOMContentLoaded', function() {
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotContainer = document.getElementById('chatbot-container');
+        const chatbotClose = document.getElementById('chatbot-close');
+        const chatbotInput = document.getElementById('chatbot-input');
+        const chatbotSend = document.getElementById('chatbot-send');
+        const chatbotMessages = document.getElementById('chatbot-messages');
+        
+        // Alternar visibilidade do chatbot
+        chatbotToggle.addEventListener('click', function() {
+            chatbotContainer.classList.toggle('active');
+            if (chatbotContainer.classList.contains('active')) {
+                chatbotInput.focus();
+            }
+        });
+        
+        // Fechar chatbot
+        chatbotClose.addEventListener('click', function() {
+            chatbotContainer.classList.remove('active');
+        });
+        
+        // Enviar mensagem ao pressionar Enter
+        chatbotInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Enviar mensagem ao clicar no botão
+        chatbotSend.addEventListener('click', sendMessage);
+        
+        function sendMessage() {
+            const option = chatbotInput.value.trim();
+            if (option !== '' && /^[1-5]$/.test(option)) {
+                // Adicionar mensagem do usuário
+                addMessage(`Opção ${option}`, 'user');
+                chatbotInput.value = '';
+                
+                // Simular resposta do bot após um pequeno atraso
+                setTimeout(function() {
+                    const botResponse = getBotResponse(option);
+                    addMessage(botResponse, 'bot');
+                    
+                    // Mostrar menu novamente após a resposta, exceto para sair
+                    if (option !== '5') {
+                        setTimeout(showMainMenu, 1000);
+                    }
+                }, 500);
+            } else {
+                addMessage("Por favor, digite apenas um número de 1 a 5.", 'bot');
+                chatbotInput.value = '';
+            }
+        }
+        
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('chatbot-message', sender);
+            messageDiv.innerHTML = `<p>${text}</p>`;
+            chatbotMessages.appendChild(messageDiv);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+        
+        function showMainMenu() {
+            const menuDiv = document.createElement('div');
+            menuDiv.classList.add('chatbot-message', 'bot');
+            menuDiv.innerHTML = `
+                <p>Escolha outra opção:</p>
+                <div class="chatbot-options">
+                    <p>1 - Nossos Serviços</p>
+                    <p>2 - Telemetria e Rastreamento</p>
+                    <p>3 - Contato e Suporte</p>
+                    <p>4 - Localização e Horários</p>
+                    <p>5 - Acesso ao Sistema</p>
+                </div>
+                <p>Digite apenas o número da opção desejada.</p>
+            `;
+            chatbotMessages.appendChild(menuDiv);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+        
+        function getBotResponse(option) {
+            switch(option) {
+                case '1':
+                    return "Nossos principais serviços são:<br><br>" +
+                           "- Mapeamento Digital<br>" +
+                           "- Geoprocessamento<br>" +
+                           "- Sensoriamento Remoto<br>" +
+                           "- Geolocalização<br><br>" +
+                           "Visite nossa página de Serviços para mais detalhes!";
+                
+                case '2':
+                    return "Nossas soluções de Telemetria incluem:<br><br>" +
+                           "- Rastreamento veicular<br>" +
+                           "- Monitoramento de frotas<br>" +
+                           "- Controle de combustível<br>" +
+                           "- Análise de rotas<br><br>" +
+                           "Acesse nosso sistema em: <a href='https://sis.segminas.com.br/?Login' target='_blank'>sis.segminas.com.br</a>";
+                
+                case '3':
+                    return "Entre em contato conosco:<br><br>" +
+                           "📞 Telefone: (31) 9 9739-6385<br>" +
+                           "📧 E-mail: comercial@geomx.com.br<br>" +
+                           "🕒 Horário: Central 24 horas";
+                
+                case '4':
+                    return "Nossa localização:<br><br>" +
+                           "📍 Rua Padre Marinho, 37<br>" +
+                           "Santa Efigênia, Belo Horizonte - MG<br>" +
+                           "CEP: 30140-040<br><br>" +
+                           "Veja no mapa no final da página!";
+                
+                case '5':
+                    return "Para acessar nosso sistema, clique no link:<br><br>" +
+                           "<a href='https://sis.segminas.com.br/?Login' target='_blank' style='color: #2c3e50; font-weight: bold;'>Acessar Sistema GeoMX</a><br><br>" +
+                           "Ou use o botão 'Acesso' no menu superior.";
+                
+                default:
+                    return "Opção inválida. Por favor, digite um número de 1 a 5.";
+            }
+        }
+    });
+</script>
+</body> 
+</html>

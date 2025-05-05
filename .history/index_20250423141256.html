@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMX - Soluções Geoespaciais</title>
+    <!-- Restante do head permanece o mesmo -->
+</head>
+<body>
+    <!-- Header permanece o mesmo -->
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Transforme sua frota com tecnologia de ponta</h1>
+                    <p class="hero-subtitle">Soluções completas em rastreamento veicular e telemetria para otimizar sua operação e reduzir custos</p>
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn-primary">
+                            <i class="fas fa-phone-alt"></i> Fale Conosco
+                        </a>
+                        <a href="#servicos" class="btn-secondary">
+                            <i class="fas fa-search"></i> Conheça Nossas Soluções
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.png" alt="Sistema de rastreamento GeoMX" class="main-image">
+                    <div class="floating-elements">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Segurança 24h</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Redução de Custos</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Rota Inteligente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="21">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Clientes Atendidos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100000">0</div>
+                    <div class="stat-label">Veículos Monitorados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Horas de Suporte</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restante do conteúdo permanece o mesmo -->
+
+    <style>
+        /* Estilos para a nova hero section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+            color: white;
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/map-pattern.png') center/cover no-repeat;
+            opacity: 0.05;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+            padding-right: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #3498db;
+            color: white;
+            border: 2px solid #3498db;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+        
+        .hero-buttons i {
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .hero-image {
+            position: relative;
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .hero-image .main-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: transform 0.5s ease;
+        }
+        
+        .hero-image:hover .main-image {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        .floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+            pointer-events: auto;
+            cursor: default;
+        }
+        
+        .floating-card i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+            color: #3498db;
+        }
+        
+        .floating-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .card-1 {
+            top: 10%;
+            left: -5%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .card-2 {
+            top: 60%;
+            right: -5%;
+            animation: float 7s ease-in-out infinite 1s;
+        }
+        
+        .card-3 {
+            bottom: 10%;
+            left: 20%;
+            animation: float 5s ease-in-out infinite 0.5s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 80px;
+            padding: 30px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+                max-width: 100%;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                max-width: 100%;
+            }
+            
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            
+            .stat-item {
+                flex: 1 1 40%;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .stat-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+
+    <script>
+        // Animação para os números estatísticos
+        document.addEventListener('DOMContentLoaded', function() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const animateNumbers = () => {
+                statNumbers.forEach(stat => {
+                    const target = parseInt(stat.getAttribute('data-count'));
+                    const duration = 2000; // 2 segundos
+                    const start = 0;
+                    const increment = target / (duration / 16); // 60fps
+                    
+                    let current = start;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            clearInterval(timer);
+                            current = target;
+                        }
+                        stat.textContent = Math.floor(current).toLocaleString();
+                    }, 16);
+                });
+            };
+            
+            // Disparar animação quando a seção estiver visível
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entries[0].target);
+                }
+            }, { threshold: 0.5 });
+            
+            observer.observe(document.querySelector('.hero-stats'));
+        });
+    </script>
+</body>
+</html>

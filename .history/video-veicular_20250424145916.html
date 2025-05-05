@@ -1,0 +1,102 @@
+/* Estilos do Carrossel */
+.carrossel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carrossel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrossel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.carrossel-caption h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.carrossel-caption p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.carrossel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carrossel-prev,
+.carrossel-next {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.carrossel-prev:hover,
+.carrossel-next:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.carrossel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.carrossel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carrossel-indicator.active {
+    background: white;
+    transform: scale(1.2);
+}

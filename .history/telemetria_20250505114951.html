@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetria Veicular - GeoMX</title>
+    <link rel="stylesheet" href="styles-dark-mode.css">
+    <script src="dark-mode.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Adicionando os novos arquivos para responsividade -->
+    <link rel="stylesheet" href="responsive.css">
+    <script src="menu-fix.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo geomx.png" alt="GeoMX Logo">
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html#inicio"><i class="fas fa-home fa-fw"></i></a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#solucoes">Soluções</a></li>
+                    <li><a href="telemetria.html">Telemetria</a></li>
+                    <li><a href="index.html#clientes"><i class="fas fa-users fa-fw"></i> Clientes</a></li>
+                    <li><a href="https://sis.segminas.com.br/?Login" target="_blank" class="btn-acesso"><i class="fas fa-sign-in-alt fa-fw"></i> Acesso</a></li>
+                    <li><a href="index.html#contato" class="btn-contato"><i class="fas fa-envelope fa-fw"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-telemetria">
+        <div class="container">
+            <h1>Telemetria Veicular Completa</h1>
+            <p class="lead">Solução personalizada de gestão de frotas que coleta informações remotamente</p>
+            <a href="#contato" class="btn-primary">Solicite uma Cotação</a>
+        </div>
+    </section>
+    
+    <section class="telemetria-section">
+        <div class="container">
+            <div class="section-header">
+<div class="carrossel-telemetria">
+    <div class="section-header">
+        <h2>Nossa Tecnologia em Ação</h2>
+        <p>Veja como nossa solção transforma a gestão de frotas</p>
+    </div>
+    
+    <div class="carrossel-container">
+        <div class="carrossel-slides">
+            <div class="carrossel-slide active">
+                <img src="images/Captura de tela 2025-04-25 155914.png" alt="Painel de Controle Telemetria">
+                <div class="carrossel-caption">
+                    <h3>Painel de Controle Completo</h3>
+                    <p>Acompanhe todos os dados da sua frota em tempo real</p>
+                </div>
+            </div>
+            <div class="carrossel-slide">
+                <img src="images/relatorio.png" alt="Relatórios Detalhados">
+                <div class="carrossel-caption">
+                    <h3>Relatórios Detalhados</h3>
+                    <p>Gere relatórios personalizados para análise de desempenho</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carrossel-nav">
+            <button class="carrossel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carrossel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="carrossel-indicators">
+            <span class="carrossel-indicator active"></span>
+            <span class="carrossel-indicator"></span>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos do carrossel */
+    .carrossel-telemetria {
+        padding: 60px 0;
+        background-color: white;
+    }
+    
+    .carrossel-container {
+        max-width: 1000px;
+        margin: 40px auto 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .carrossel-slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .carrossel-slide {
+        min-width: 100%;
+        position: relative;
+    }
+    
+    .carrossel-slide img {
+        width: 100%;
+        display: block;
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    .carrossel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(44, 62, 80, 0.9);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .carrossel-caption h3 {
+        margin-top: 0;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    
+    .carrossel-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        padding: 0 15px;
+    }
+    
+    .carrossel-prev,
+    .carrossel-next {
+        background: rgba(255, 255, 255, 0.7);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        color: var(--dark-color);
+    }
+    
+    .carrossel-prev:hover,
+    .carrossel-next:hover {
+        background: white;
+        color: var(--primary-color);
+    }
+    
+    .carrossel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .carrossel-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ccc;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .carrossel-indicator.active {
+        background: var(--primary-color);
+        transform: scale(1.2);
+    }
+    
+    @media (max-width: 768px) {
+        .carrossel-slide img {
+            height: 350px;
+        }
+        
+        .carrossel-caption h3 {
+            font-size: 1.2rem;
+        }
+        
+        .carrossel-caption p {
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .carrossel-slide img {
+            height: 250px;
+        }
+    }
+</style>
+
+<script>
+    // Script do carrossel
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.carrossel-slide');
+        const indicators = document.querySelectorAll('.carrossel-indicator');
+        const prevBtn = document.querySelector('.carrossel-prev');
+        const nextBtn = document.querySelector('.carrossel-next');
+        const slidesContainer = document.querySelector('.carrossel-slides');
+        let currentIndex = 0;
+        let interval;
+        
+        function updateCarousel() {
+            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
+        
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+        
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+                resetInterval();
+            });
+        });
+        
+        function startInterval() {
+            interval = setInterval(nextSlide, 5000);
+        }
+        
+        function resetInterval() {
+            clearInterval(interval);
+            startInterval();
+        }
+        
+        // Pause on hover
+        const carrossel = document.querySelector('.carrossel-container');
+        carrossel.addEventListener('mouseenter', () => clearInterval(interval));
+        carrossel.addEventListener('mouseleave', startInterval);
+        
+        // Iniciar o carrossel automático
+        startInterval();
+    });
+</script>
+<h2>GeoMine</h2>
+<p>A solução GeoMine da Geomx oferece telemetria avançada para mineradoras, com controle total da frota em tempo real.</p>
+            </div>
+            
+            <div class="telemetria-cards">
+                <div class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Monitoramento Contínuo</h3>
+                    <p>Detecção precoce de falhas mecânicas para redução de custos com manutenção.</p>
+                </div>
+                
+                <div class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Relatórios de Produtividade</h3>
+                    <p>Controle de tempo ocioso, consumo de combustível e otimização operacional.</p>
+                </div>
+                
+                <div class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Alertas Inteligentes</h3>
+                    <p>Notificações automáticas de fadiga, excesso de velocidade e mau uso dos equipamentos.</p>
+                </div>
+                
+                <div class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Gestão Centralizada</h3>
+                    <p>Decisões rápidas baseadas em dados confiáveis e integrados.</p>
+                </div>
+                
+                <div class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Tecnologia Robusta</h3>
+                    <p>Integração com sensores CAN e conectividade para ambientes severos.</p>
+                </div>
+                
+                <div class="telemetria-card">
+                    <div class="telemetria-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança Operacional</h3>
+                    <p>Soluções específicas para promover mais segurança nas operações mineiras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Solicite mais informações ou um orçamento personalizado</p>
+            </div>
+            
+            <style>
+                :root {
+                    --primary-color: #1d3557;
+                    --secondary-color: #457b9d;
+                    --accent-color: #ff6b6b;
+                    --light-color: #f8f9fa;
+                    --dark-color: #2c3e50;
+                    --success-color: #28a745;
+                    --error-color: #dc3545;
+                    --border-radius: 8px;
+                    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    --transition: all 0.3s ease;
+                }
+        
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-color: #f5f7fa;
+                    color: #333;
+                    line-height: 1.6;
+                    padding: 0;
+                    margin: 0;
+                }
+        
+                .container {
+                    max-width: 800px;
+                    margin: 40px auto;
+                    padding: 30px;
+                    background: white;
+                    border-radius: var(--border-radius);
+                    box-shadow: var(--box-shadow);
+                }
+        
+                .form-header {
+                    text-align: center;
+                    margin-bottom: 30px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #eee;
+                }
+        
+                .form-header h2 {
+                    color: var(--primary-color);
+                    margin-bottom: 10px;
+                }
+        
+                .form-header p {
+                    color: var(--secondary-color);
+                    font-size: 1.1rem;
+                }
+        
+                .form-container {
+                    margin-bottom: 30px;
+                }
+        
+                .form-container h3 {
+                    color: var(--primary-color);
+                    margin-bottom: 20px;
+                    font-size: 1.3rem;
+                    position: relative;
+                    padding-left: 15px;
+                }
+        
+                .form-container h3::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 5px;
+                    background-color: var(--accent-color);
+                    border-radius: 3px;
+                }
+        
+                .checkbox-group {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+        
+                .checkbox-container {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    padding-left: 35px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    user-select: none;
+                    transition: var(--transition);
+                }
+        
+                .checkbox-container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+        
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 22px;
+                    width: 22px;
+                    background-color: #eee;
+                    border-radius: 4px;
+                    transition: var(--transition);
+                }
+        
+                .checkbox-container:hover input ~ .checkmark {
+                    background-color: #ccc;
+                }
+        
+                .checkbox-container input:checked ~ .checkmark {
+                    background-color: var(--primary-color);
+                }
+        
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+        
+                .checkbox-container input:checked ~ .checkmark:after {
+                    display: block;
+                }
+        
+                .checkbox-container .checkmark:after {
+                    left: 8px;
+                    top: 4px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+        
+                .form-fields {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 20px;
+                }
+        
+                .form-group {
+                    margin-bottom: 20px;
+                }
+        
+                .form-group label {
+                    display: block;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                    color: var(--dark-color);
+                }
+        
+                .form-group input,
+                .form-group textarea,
+                .form-group select {
+                    width: 100%;
+                    padding: 12px 15px;
+                    border: 1px solid #ddd;
+                    border-radius: var(--border-radius);
+                    font-size: 1rem;
+                    transition: var(--transition);
+                }
+        
+                .form-group input:focus,
+                .form-group textarea:focus,
+                .form-group select:focus {
+                    border-color: var(--primary-color);
+                    box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.1);
+                    outline: none;
+                }
+        
+                .form-group input.error,
+                .form-group textarea.error,
+                .form-group select.error {
+                    border-color: var(--error-color);
+                }
+        
+                .error-message {
+                    color: var(--error-color);
+                    font-size: 0.85rem;
+                    margin-top: 5px;
+                    display: none;
+                }
+        
+                .error-message.visible {
+                    display: block;
+                }
+        
+                .form-footer {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+        
+                .btn-submit {
+                    background-color: var(--primary-color);
+                    color: white;
+                    border: none;
+                    padding: 12px 30px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    border-radius: var(--border-radius);
+                    cursor: pointer;
+                    transition: var(--transition);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .btn-submit:hover {
+                    background-color: #15293f;
+                    transform: translateY(-2px);
+                }
+        
+                .btn-submit i {
+                    margin-right: 8px;
+                }
+        
+                .form-note {
+                    margin-top: 20px;
+                    font-size: 0.9rem;
+                    color: #777;
+                    text-align: center;
+                }
+        
+                /* Responsividade */
+                @media (max-width: 768px) {
+                    .container {
+                        padding: 20px;
+                        margin: 20px;
+                    }
+        
+                    .checkbox-group,
+                    .form-fields {
+                        grid-template-columns: 1fr;
+                    }
+                }
+        
+                /* Animações */
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(10px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+        
+                .container {
+                    animation: fadeIn 0.5s ease-out;
+                }
+        
+                /* Tooltip para campos obrigatórios */
+                .required-field::after {
+                    content: '*';
+                    color: var(--error-color);
+                    margin-left: 4px;
+                }
+        
+                .tooltip {
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: #777;
+                }
+        
+                .tooltip .tooltiptext {
+                    visibility: hidden;
+                    width: 200px;
+                    background-color: #555;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    left: 50%;
+                    margin-left: -100px;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                }
+        
+                .tooltip:hover .tooltiptext {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="form-header">
+                    <h2>Solicite sua Cotação</h2>
+                    <p>Preencha o formulário abaixo para receber uma proposta personalizada para sua empresa</p>
+                </div>
+        
+                <form id="cotacaoForm" action="https://formsubmit.co/gabrielalvessr@gmail.com" method="POST">
+                    <!-- Configurações ocultas -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://geomx.com.br/obrigado.html">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Solicitação de Cotação - Site GeoMX">
+                
+                    <!-- Programas de Interesse -->
+                    <div class="form-container">
+                        <h3>Quais soluções você deseja?</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="solucoes" value="Telemetria Veicular">
+                                <span class="checkmark"></span>
+                                Telemetria Veicular
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="solucoes" value="Vídeo Monitoramento">
+                                <span class="checkmark"></span>
+                                Vídeo Monitoramento
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="solucoes" value="Sensor de Fadiga / ADAS">
+                                <span class="checkmark"></span>
+                                Sensor de Fadiga / ADAS
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="solucoes" value="Controle de Passageiros (GeoBus)">
+                                <span class="checkmark"></span>
+                                Controle de Passageiros (GeoBus)
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="solucoes" value="Gestão de Frota (GeoFrotas)">
+                                <span class="checkmark"></span>
+                                Gestão de Frota (GeoFrotas)
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="solucoes" value="Rastreamento Veicular">
+                                <span class="checkmark"></span>
+                                Rastreamento Veicular
+                            </label>
+                        </div>
+                        <div id="solucoes-error" class="error-message">Por favor, selecione pelo menos uma solução</div>
+                    
+                        <div class="form-fields">
+                            <div class="form-group">
+                                <label for="nome" class="required-field">Nome completo</label>
+                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                                <div id="nome-error" class="error-message">Por favor, informe seu nome completo</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="required-field">E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                                <div id="email-error" class="error-message">Por favor, informe um e-mail válido</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone" class="required-field">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                                <div id="telefone-error" class="error-message">Por favor, informe um telefone válido</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="veiculos">Número de veículos <span class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">Informe a quantidade aproximada de veículos na sua frota</span></span></label>
+                                <input type="number" id="veiculos" name="veiculos" placeholder="Quantidade de veículos" min="1">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="segmento">Segmento de atuação</label>
+                                <select id="segmento" name="segmento">
+                                    <option value="">Selecione um segmento</option>
+                                    <option value="Transporte">Transporte</option>
+                                    <option value="Logística">Logística</option>
+                                    <option value="Mineração">Mineração</option>
+                                    <option value="Construção">Construção</option>
+                                    <option value="Agronegócio">Agronegócio</option>
+                                    <option value="Serviços">Serviços</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Informações adicionais</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva suas necessidades específicas ou forneça informações adicionais que possam ser relevantes para a cotação"></textarea>
+                        </div>
+                    </div>
+        
+                    <div class="form-footer">
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar Solicitação</button>
+                        <p class="form-note">Ao enviar este formulário, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+                    </div>
+                </form>
+            </div>
+        
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const form = document.getElementById('cotacaoForm');
+                    
+                    // Máscara para telefone
+                    const telefoneInput = document.getElementById('telefone');
+                    telefoneInput.addEventListener('input', function(e) {
+                        let value = e.target.value.replace(/\D/g, '');
+                        if (value.length > 11) value = value.slice(0, 11);
+                        
+                        if (value.length > 2 && value.length <= 6) {
+                            value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+                        } else if (value.length > 6) {
+                            value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+                        }
+                        
+                        e.target.value = value;
+                    });
+                    
+                    // Validação do formulário
+                    form.addEventListener('submit', function(e) {
+                        let isValid = true;
+                        
+                        // Validar checkboxes
+                        const checkboxes = document.querySelectorAll('input[name="solucoes"]');
+                        const solucoesError = document.getElementById('solucoes-error');
+                        let checked = false;
+                        
+                        checkboxes.forEach(checkbox => {
+                            if (checkbox.checked) {
+                                checked = true;
+                            }
+                        });
+                        
+                        if (!checked) {
+                            solucoesError.classList.add('visible');
+                            isValid = false;
+                        } else {
+                            solucoesError.classList.remove('visible');
+                        }
+                        
+                        // Validar nome
+                        const nomeInput = document.getElementById('nome');
+                        const nomeError = document.getElementById('nome-error');
+                        
+                        if (nomeInput.value.trim() === '' || nomeInput.value.trim().split(' ').length < 2) {
+                            nomeInput.classList.add('error');
+                            nomeError.classList.add('visible');
+                            isValid = false;
+                        } else {
+                            nomeInput.classList.remove('error');
+                            nomeError.classList.remove('visible');
+                        }
+                        
+                        // Validar email
+                        const emailInput = document.getElementById('email');
+                        const emailError = document.getElementById('email-error');
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        
+                        if (!emailRegex.test(emailInput.value)) {
+                            emailInput.classList.add('error');
+                            emailError.classList.add('visible');
+                            isValid = false;
+                        } else {
+                            emailInput.classList.remove('error');
+                            emailError.classList.remove('visible');
+                        }
+                        
+                        // Validar telefone
+                        const telefoneError = document.getElementById('telefone-error');
+                        const telefoneValue = telefoneInput.value.replace(/\D/g, '');
+                        
+                        if (telefoneValue.length < 10) {
+                            telefoneInput.classList.add('error');
+                            telefoneError.classList.add('visible');
+                            isValid = false;
+                        } else {
+                            telefoneInput.classList.remove('error');
+                            telefoneError.classList.remove('visible');
+                        }
+                        
+                        if (!isValid) {
+                            e.preventDefault();
+                            // Scroll para o primeiro erro
+                            const firstError = document.querySelector('.error-message.visible');
+                            if (firstError) {
+                                firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }
+                        }
+                    });
+                    
+                    // Feedback visual ao focar nos campos
+                    const inputs = document.querySelectorAll('input, textarea, select');
+                    inputs.forEach(input => {
+                        input.addEventListener('focus', function() {
+                            this.parentElement.classList.add('focused');
+                        });
+                        
+                        input.addEventListener('blur', function() {
+                            this.parentElement.classList.remove('focused');
+                        });
+                    });
+                });
+            </script>
+            
+               
+            
+                <!-- Detalhes -->
+                <div class="input-group">
+                    <textarea name="detalhes" rows="4" placeholder="Descreva suas necessidades..."></textarea>
+                </div>
+            
+                <!-- Botão -->
+                <button type="submit" class="btn-primary">
+                    <span>Enviar Cotação</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            
+            </div>
+          </div>
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Padre Marinho, 37 - Minas Gerais - BH</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>0800 580 2866<br>(31) 9 9739-6385</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>comercial@geomx.com.br</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/geomxbrasil" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/geomx" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/geomx_brasil/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC2VQmLmBy8NQ2N8LnCI59Cg" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.955249439259!2d-43.92309932514979!3d-19.926290538192287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699cd28e77955%3A0xd93406e577a22ba!2sR.%20Padre%20Marinho%2C%2037%20-%20Santa%20Efig%C3%AAnia%2C%20Belo%20Horizonte%20-%20MG%2C%2030140-040!5e0!3m2!1spt-BR!2sbr!4v1745327561781!5m2!1spt-BR!2sbr" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius: 12px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo geomx.png" alt="GeoMX Logo">
+                    <p>Transformando dados geográficos em soluções estratégicas</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="index.html#sobre">Sobre Nós</a></li>
+                            <li><a href="index.html#clientes">Clientes</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="telemetria.html">Telemetria Veicular</a></li>
+                            <li><a href="rede-can.html">Rede CAN</a></li>
+                            <li><a href="sensor-fadiga.html">Sensor de Fadiga</a></li>
+                            <li><a href="video-veicular.html">Vídeo Veicular</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="index.html#contato">Contato</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-images">
+                <img src="images/apple.png" alt="Disponível na App Store" class="footer-img">
+                <img src="images/google play.png" alt="Disponível no Google Play" class="footer-img">
+            </div>
+            <style>
+                .footer-images {
+                text-align: left; /* Alinha conteúdo à esquerda */
+                margin: 20px 0;
+            }
+            
+            .footer-img {
+                max-width: 120px; /* Diminui o tamanho */
+                width: 100%;
+                height: auto;
+                display: block;
+                margin-bottom: 10px; /* Espaço entre as imagens */
+            }
+            
+            </style>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GeoMX. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+        <button id="cookie-accept">Aceitar</button>
+    </div>
+    
+    <a href="https://wa.me/31997396385" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
